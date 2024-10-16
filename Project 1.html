@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knitting Landing Page</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f4f6;
+        color: #333;
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      header {
+        text-align: center;
+        padding: 40px;
+        background: url("https://images.unsplash.com/photo-1543269865-cbf427effbad")
+          no-repeat center center/cover;
+        color: white;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 3em;
+      }
+
+      section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 1.5em;
+      }
+
+      .card p {
+        line-height: 1.6;
+      }
+
+      .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #885df1;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      }
+
+      .theme-toggle:hover {
+        background-color: #ff8ac9;
+      }
+
+      .dark-mode {
+        background-color: #121212;
+        color: white;
+      }
+
+      .dark-mode header {
+        background: url("https://images.unsplash.com/photo-1521389508051-d7ffb5dc8e1e")
+          no-repeat center center/cover;
+      }
+
+      .dark-mode .card {
+        background-color: #333;
+        color: white;
+        box-shadow: none;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+        background-color: #885df1;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-toggle" id="themeToggle">
+      Toggle Dark/Light Theme
+    </button>
+
+    <header>
+      <h1>Knitting: The Art of Yarn</h1>
+    </header>
+
+    <div class="container">
+      <section>
+        <div class="card">
+          <img
+            src="https://www.bhg.com/thmb/WJktvf63Wc9BKKDycxnA4utyJ1g=/1983x0/filters:no_upscale():strip_icc()/Knitting-101-c4dc7f4edd724662bf422c05f555f04a.jpg"
+            alt="Knitting Image 1"
+          />
+          <h2>Getting Started</h2>
+          <p>
+            Learn the basics of knitting, from casting on to simple stitches
+            like knit and purl. Perfect for beginners looking to create their
+            first project.
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4oOALjyPG0ILK0VwbrqAY21eUJNhrJhioJQ&s"
+            alt="Knitting Image 2"
+          />
+          <h2>Choosing Yarn</h2>
+          <p>
+            Discover different types of yarns, from soft wool to colorful
+            acrylics. Choose the right yarn for your project for the best
+            results.
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgIYTU94mYG2BfiUzDb2YB-xpjfIEMyXrLEw&s"
+            alt="Knitting Image 3"
+          />
+          <h2>Patterns and Techniques</h2>
+          <p>
+            Advance your skills with various knitting techniques. Explore
+            patterns that will challenge you and expand your knitting abilities.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer>Coded by Orateng Kgoshe</footer>
+  </body>
+</html>
